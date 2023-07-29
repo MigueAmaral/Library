@@ -1,0 +1,75 @@
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  opacity: 0;
+  gap: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "bc1 bc2 bc3"
+    "bc4 bc5 bc6";
+  place-content: center;
+  margin: auto;
+  gap: 30px;
+}
+
+/*#bc1 {
+  grid-area: bc1;
+}
+
+#bc2 {
+  grid-area: bc2;
+}
+
+#bc3 {
+  grid-area: bc3;
+}
+
+#bc4 {
+  grid-area: bc4;
+}
+
+#bc5 {
+  grid-area: bc5;
+}
+
+#bc6 {
+  grid-area: bc6;
+}*/
+
+.bookCards {
+  height: 300px;
+  width: 200px;
+  background-color: bisque;
+  display: grid;
+  grid-template-rows: 1.5fr 0.5fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  place-items: center;
+  opacity: 1;
+}
+
+.read {
+  font-weight: bold;
+}
